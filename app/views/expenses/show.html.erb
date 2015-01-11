@@ -12,7 +12,7 @@
 
 <p>
   <strong>Receipt:</strong>
-  <%= @expense.receipt %>
+  <%= receipt_link(@expense) %>
 </p>
 
 <p>
@@ -22,12 +22,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @expense.user %>
+  <%= @expense.user.name %>
 </p>
 
 <p>
   <strong>Week:</strong>
-  <%= @expense.week %>
+  <%= @expense.week.start_date %>
 </p>
 
 <p>

@@ -17,8 +17,8 @@
   <tbody>
     <% @schedules.each do |schedule| %>
       <tr>
-        <td><%= schedule.week %></td>
-        <td><%= schedule.user %></td>
+        <td><%= schedule.week.start_date %></td>
+        <td><%= schedule.user.name %></td>
         <td><%= schedule.arrival_date %></td>
         <td><%= schedule.departure_date %></td>
         <td><%= schedule.arrival_time %></td>

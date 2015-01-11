@@ -5,9 +5,9 @@
     <%= f.input :date_completed %>
     <%= f.input :amount %>
     <%= f.input :platform %>
-    <%= f.input :actor_id %>
-    <%= f.input :target_id %>
-    <%= f.input :reproter_id %>
+    <%= f.association :actor %>
+    <%= f.association :target %>
+    <%= f.association :reporter %>
   </div>
 
   <div class="form-actions">

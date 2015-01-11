@@ -2,7 +2,7 @@
 
 <p>
   <strong>Ingredient:</strong>
-  <%= @grocery_item.ingredient %>
+  <%= @grocery_item.ingredient.name %>
 </p>
 
 <p>
@@ -12,7 +12,7 @@
 
 <p>
   <strong>Grocery unit:</strong>
-  <%= @grocery_item.grocery_unit %>
+  <%= @grocery_item.grocery_unit.name %>
 </p>
 
 <%= link_to 'Edit', edit_grocery_item_path(@grocery_item) %> |

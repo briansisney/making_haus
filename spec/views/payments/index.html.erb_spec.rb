@@ -8,14 +8,14 @@ RSpec.describe "payments/index", :type => :view do
         :platform => "Platform",
         :actor_id => 1,
         :target_id => 2,
-        :reproter_id => 3
+        :reporter_id => 3
       ),
       Payment.create!(
         :amount => 1.5,
         :platform => "Platform",
         :actor_id => 1,
         :target_id => 2,
-        :reproter_id => 3
+        :reporter_id => 3
       )
     ])
   end

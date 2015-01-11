@@ -2,17 +2,17 @@
 
 <p>
   <strong>User:</strong>
-  <%= @guest_list.user %>
+  <%= @guest_list.user.name %>
 </p>
 
 <p>
   <strong>Guest:</strong>
-  <%= @guest_list.guest_id %>
+  <%= @guest_list.guest.name %>
 </p>
 
 <p>
   <strong>Week:</strong>
-  <%= @guest_list.week %>
+  <%= @guest_list.week.start_date %>
 </p>
 
 <%= link_to 'Edit', edit_guest_list_path(@guest_list) %> |

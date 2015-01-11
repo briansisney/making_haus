@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   has_many :guest_lists
   has_many :guests, through: :guest_lists
-  has_many :inverse_guest_lists, class_name: "GuestList", :foreign_key: "guest_id"
+  has_many :inverse_guest_lists, class_name: "GuestList", foreign_key: "guest_id"
   has_many :hosts, through: :inverse_guest_lists, source: :user
 
   has_many :expense_responsibilities
@@ -15,14 +15,16 @@ class User < ActiveRecord::Base
 
   # need a permissioning method so guests can only see their week
 
-  def as_actor
+  def payments_as_actor
     Payment.where(actor_id: self)
   end
-  def as_target
+  def payments_as_target
     Payment.where(target_id: self)
   end
-  def as_reporter
+  def payments_as_reporter
     Payment.where(reporter_id: self)
   end
-
+  
+  # figure out a way to add users to group through invite
+  # make auth through venmo
 end

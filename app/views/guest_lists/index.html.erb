@@ -15,9 +15,9 @@
   <tbody>
     <% @guest_lists.each do |guest_list| %>
       <tr>
-        <td><%= guest_list.user %></td>
-        <td><%= guest_list.guest_id %></td>
-        <td><%= guest_list.week %></td>
+        <td><%= guest_list.user.name %></td>
+        <td><%= guest_list.guest.name %></td>
+        <td><%= guest_list.week.start_date %></td>
         <td><%= link_to 'Show', guest_list %></td>
         <td><%= link_to 'Edit', edit_guest_list_path(guest_list) %></td>
         <td><%= link_to 'Destroy', guest_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>

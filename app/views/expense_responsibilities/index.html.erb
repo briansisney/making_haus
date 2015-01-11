@@ -16,7 +16,7 @@
     <% @expense_responsibilities.each do |expense_responsibility| %>
       <tr>
         <td><%= expense_responsibility.expense %></td>
-        <td><%= expense_responsibility.user %></td>
+        <td><%= expense_responsibility.user.name %></td>
         <td><%= expense_responsibility.amount %></td>
         <td><%= link_to 'Show', expense_responsibility %></td>
         <td><%= link_to 'Edit', edit_expense_responsibility_path(expense_responsibility) %></td>

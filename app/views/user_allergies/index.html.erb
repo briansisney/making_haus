@@ -14,7 +14,7 @@
   <tbody>
     <% @user_allergies.each do |user_allergy| %>
       <tr>
-        <td><%= user_allergy.user %></td>
+        <td><%= user_allergy.user.name %></td>
         <td><%= user_allergy.allergy %></td>
         <td><%= link_to 'Show', user_allergy %></td>
         <td><%= link_to 'Edit', edit_user_allergy_path(user_allergy) %></td>

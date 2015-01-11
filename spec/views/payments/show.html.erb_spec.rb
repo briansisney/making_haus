@@ -7,7 +7,7 @@ RSpec.describe "payments/show", :type => :view do
       :platform => "Platform",
       :actor_id => 1,
       :target_id => 2,
-      :reproter_id => 3
+      :reporter_id => 3
     ))
   end
 

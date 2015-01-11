@@ -15,7 +15,7 @@
     <% @no_lists.each do |no_list| %>
       <tr>
         <td><%= no_list.name %></td>
-        <td><%= no_list.user %></td>
+        <td><%= no_list.user.name %></td>
         <td><%= link_to 'Show', no_list %></td>
         <td><%= link_to 'Edit', edit_no_list_path(no_list) %></td>
         <td><%= link_to 'Destroy', no_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>

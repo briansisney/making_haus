@@ -16,7 +16,7 @@
     <% @dishes.each do |dish| %>
       <tr>
         <td><%= dish.name %></td>
-        <td><%= dish.user %></td>
+        <td><%= dish.user.name %></td>
         <td><%= dish.recipe %></td>
         <td><%= link_to 'Show', dish %></td>
         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>

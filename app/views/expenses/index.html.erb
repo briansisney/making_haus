@@ -21,10 +21,10 @@
       <tr>
         <td><%= expense.name %></td>
         <td><%= expense.amount %></td>
-        <td><%= expense.receipt %></td>
+        <td><%= receipt_link(expense) %></td>
         <td><%= expense.transaction_date %></td>
-        <td><%= expense.user %></td>
-        <td><%= expense.week %></td>
+        <td><%= expense.user.name %></td>
+        <td><%= expense.week.start_date %></td>
         <td><%= expense.expense_type %></td>
         <td><%= link_to 'Show', expense %></td>
         <td><%= link_to 'Edit', edit_expense_path(expense) %></td>

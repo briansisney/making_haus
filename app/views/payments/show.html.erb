@@ -17,17 +17,17 @@
 
 <p>
   <strong>Actor:</strong>
-  <%= @payment.actor_id %>
+  <%= @payment.actor.name %>
 </p>
 
 <p>
   <strong>Target:</strong>
-  <%= @payment.target_id %>
+  <%= @payment.target.name %>
 </p>
 
 <p>
-  <strong>Reproter:</strong>
-  <%= @payment.reproter_id %>
+  <strong>reporter:</strong>
+  <%= @payment.reporter.name %>
 </p>
 
 <%= link_to 'Edit', edit_payment_path(@payment) %> |

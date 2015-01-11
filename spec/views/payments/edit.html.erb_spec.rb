@@ -7,7 +7,7 @@ RSpec.describe "payments/edit", :type => :view do
       :platform => "MyString",
       :actor_id => 1,
       :target_id => 1,
-      :reproter_id => 1
+      :reporter_id => 1
     ))
   end
 
@@ -24,7 +24,7 @@ RSpec.describe "payments/edit", :type => :view do
 
       assert_select "input#payment_target_id[name=?]", "payment[target_id]"
 
-      assert_select "input#payment_reproter_id[name=?]", "payment[reproter_id]"
+      assert_select "input#payment_reporter_id[name=?]", "payment[reporter_id]"
     end
   end
 end

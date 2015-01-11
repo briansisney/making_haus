@@ -10,7 +10,7 @@
       <th>Platform</th>
       <th>Actor</th>
       <th>Target</th>
-      <th>Reproter</th>
+      <th>reporter</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,9 +21,9 @@
         <td><%= payment.date_completed %></td>
         <td><%= payment.amount %></td>
         <td><%= payment.platform %></td>
-        <td><%= payment.actor_id %></td>
-        <td><%= payment.target_id %></td>
-        <td><%= payment.reproter_id %></td>
+        <td><%= payment.actor.name %></td>
+        <td><%= payment.target.name %></td>
+        <td><%= payment.reporter.name %></td>
         <td><%= link_to 'Show', payment %></td>
         <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
         <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

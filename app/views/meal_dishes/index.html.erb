@@ -15,7 +15,7 @@
     <% @meal_dishes.each do |meal_dish| %>
       <tr>
         <td><%= meal_dish.meal %></td>
-        <td><%= meal_dish.dish %></td>
+        <td><%= meal_dish.dish.name %></td>
         <td><%= link_to 'Show', meal_dish %></td>
         <td><%= link_to 'Edit', edit_meal_dish_path(meal_dish) %></td>
         <td><%= link_to 'Destroy', meal_dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>

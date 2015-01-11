@@ -15,9 +15,9 @@
   <tbody>
     <% @grocery_items.each do |grocery_item| %>
       <tr>
-        <td><%= grocery_item.ingredient %></td>
+        <td><%= grocery_item.ingredient.name %></td>
         <td><%= grocery_item.amount %></td>
-        <td><%= grocery_item.grocery_unit %></td>
+        <td><%= grocery_item.grocery_unit.name %></td>
         <td><%= link_to 'Show', grocery_item %></td>
         <td><%= link_to 'Edit', edit_grocery_item_path(grocery_item) %></td>
         <td><%= link_to 'Destroy', grocery_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
