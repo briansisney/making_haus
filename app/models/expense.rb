@@ -5,4 +5,6 @@ class Expense < ActiveRecord::Base
 
   has_many :expense_responsibilities
   has_many :users, through: :expense_responsibilities
+
+  default_scope order: :transaction_date
 end

@@ -6,14 +6,23 @@ class User < ActiveRecord::Base
   has_many :expenses
 
   has_many :guest_lists
-  has_many :guests, :through => :guest_lists
-  has_many :inverse_guest_lists, :class_name => "GuestList", :foreign_key => "guest_id"
-  has_many :inverse_guests, :through => :inverse_guest_lists, :source => :user
+  has_many :guests, through: :guest_lists
+  has_many :inverse_guest_lists, class_name: "GuestList", :foreign_key: "guest_id"
+  has_many :hosts, through: :inverse_guest_lists, source: :user
 
   has_many :expense_responsibilities
   has_many :expenses, through: :expense_responsibilities
 
   # need a permissioning method so guests can only see their week
 
-  # need methods for accessing Payment as an actor, target and reporter
+  def as_actor
+    Payment.where(actor_id: self)
+  end
+  def as_target
+    Payment.where(target_id: self)
+  end
+  def as_reporter
+    Payment.where(reporter_id: self)
+  end
+
 end
