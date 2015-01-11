@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Expense:</strong>
+  <%= @expense_responsibility.expense %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @expense_responsibility.user %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @expense_responsibility.amount %>
+</p>
+
+<%= link_to 'Edit', edit_expense_responsibility_path(@expense_responsibility) %> |
+<%= link_to 'Back', expense_responsibilities_path %>

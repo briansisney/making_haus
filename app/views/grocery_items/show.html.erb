@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ingredient:</strong>
+  <%= @grocery_item.ingredient %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @grocery_item.amount %>
+</p>
+
+<p>
+  <strong>Grocery unit:</strong>
+  <%= @grocery_item.grocery_unit %>
+</p>
+
+<%= link_to 'Edit', edit_grocery_item_path(@grocery_item) %> |
+<%= link_to 'Back', grocery_items_path %>

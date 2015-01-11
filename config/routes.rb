@@ -1,4 +1,40 @@
 Rails.application.routes.draw do
+  resources :user_allergies
+
+  resources :schedules
+
+  resources :meal_dishes
+
+  resources :dish_groceries
+
+  resources :no_lists
+
+  resources :guests
+
+  resources :meals
+
+  resources :dishes
+
+  resources :expense_responsibilities
+
+  resources :paids
+
+  resources :expenses
+
+  resources :receipts
+
+  resources :grocery_items
+
+  resources :grocery_units
+
+  resources :ingredients
+
+  resources :weeks
+
+  resources :allergies
+
+  resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

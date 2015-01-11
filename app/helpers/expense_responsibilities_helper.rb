@@ -1,0 +1,2 @@
+module ExpenseResponsibilitiesHelper
+end

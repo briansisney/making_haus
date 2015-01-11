@@ -1,0 +1,2 @@
+module NoListsHelper
+end

@@ -1,0 +1,15 @@
+<%= simple_form_for(@schedule) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :week %>
+    <%= f.association :user %>
+    <%= f.input :arrival_date %>
+    <%= f.input :departure_date %>
+    <%= f.input :arrival_time %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

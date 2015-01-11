@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grocery item:</strong>
+  <%= @dish_grocery.grocery_item %>
+</p>
+
+<p>
+  <strong>Dish:</strong>
+  <%= @dish_grocery.dish %>
+</p>
+
+<%= link_to 'Edit', edit_dish_grocery_path(@dish_grocery) %> |
+<%= link_to 'Back', dish_groceries_path %>

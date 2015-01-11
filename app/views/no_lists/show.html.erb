@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @no_list.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @no_list.user %>
+</p>
+
+<%= link_to 'Edit', edit_no_list_path(@no_list) %> |
+<%= link_to 'Back', no_lists_path %>

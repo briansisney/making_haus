@@ -1,0 +1,3 @@
+class NoList < ActiveRecord::Base
+  belongs_to :user
+end

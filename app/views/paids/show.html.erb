@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date completed:</strong>
+  <%= @paid.date_completed %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @paid.amount %>
+</p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @paid.platform %>
+</p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @paid.actor_id %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @paid.target_id %>
+</p>
+
+<p>
+  <strong>Reproter:</strong>
+  <%= @paid.reproter_id %>
+</p>
+
+<%= link_to 'Edit', edit_paid_path(@paid) %> |
+<%= link_to 'Back', paids_path %>
