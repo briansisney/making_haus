@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  resources :payments
+
+  resources :guest_lists
+
+  root 'users#index'
+
   resources :user_allergies
 
   resources :schedules
@@ -9,15 +16,11 @@ Rails.application.routes.draw do
 
   resources :no_lists
 
-  resources :guests
-
   resources :meals
 
   resources :dishes
 
   resources :expense_responsibilities
-
-  resources :paids
 
   resources :expenses
 

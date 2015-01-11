@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date completed:</strong>
+  <%= @payment.date_completed %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @payment.amount %>
+</p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @payment.platform %>
+</p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @payment.actor_id %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @payment.target_id %>
+</p>
+
+<p>
+  <strong>Reproter:</strong>
+  <%= @payment.reproter_id %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>
